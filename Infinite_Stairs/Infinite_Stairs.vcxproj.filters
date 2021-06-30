@@ -46,6 +46,9 @@
     <Filter Include="Source Files\99.Mgr\04.StairMgr">
       <UniqueIdentifier>{714e51b4-efd1-40ee-896e-02cbced81be9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\01.Obj\Player">
+      <UniqueIdentifier>{643dd04b-01f6-4970-8e8f-feaf88508681}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -105,6 +108,9 @@
     <ClInclude Include="StairMgr.h">
       <Filter>Source Files\99.Mgr\04.StairMgr</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\01.Obj\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -135,6 +141,9 @@
       <Filter>Source Files\99.Mgr\04.StairMgr</Filter>
     </ClCompile>
     <ClCompile Include="Infinite_Stairs.cpp" />
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\01.Obj\Player</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Infinite_Stairs.rc">
