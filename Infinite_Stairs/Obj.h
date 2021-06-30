@@ -6,6 +6,7 @@ class CObj
 {
 public:
 	CObj();
+	CObj(INFO& _tInfo);
 	virtual ~CObj();
 
 	virtual void Initialize() = 0;
@@ -13,6 +14,8 @@ public:
 	virtual void Late_Update() = 0;
 	virtual void Render(HDC _DC) = 0;
 	virtual void Release() = 0;
+
+	void Update_Rect();
 
 public:
 	const INFO& Get_Info() const { return m_tInfo; }

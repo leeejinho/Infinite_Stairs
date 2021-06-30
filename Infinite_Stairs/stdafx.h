@@ -18,9 +18,11 @@
 #include <tchar.h>
 
 #include <iostream>
+#include <time.h>
 // TODO: reference additional headers your program requires here
 #include <vector>
 #include <list>
+#include <deque>
 #include <algorithm>
 
 using namespace std;

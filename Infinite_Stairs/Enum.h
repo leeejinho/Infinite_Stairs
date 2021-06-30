@@ -13,4 +13,5 @@ namespace RENDERID
 	enum ID { BACKGROUND, OBJECT, EFFECT, UI, END };
 }
 
+
 #endif // !__ENUM_H__

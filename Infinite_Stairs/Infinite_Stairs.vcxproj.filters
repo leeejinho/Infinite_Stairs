@@ -40,6 +40,12 @@
     <Filter Include="Source Files\99.Mgr\03.CollisionMgr">
       <UniqueIdentifier>{ce3077dc-67e1-4425-ac1d-b6382bf6a559}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\01.Obj\Stair">
+      <UniqueIdentifier>{f46540f1-4c43-4fb6-9096-4d531d1a9a62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\99.Mgr\04.StairMgr">
+      <UniqueIdentifier>{714e51b4-efd1-40ee-896e-02cbced81be9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -93,6 +99,12 @@
     <ClInclude Include="CollisionMgr.h">
       <Filter>Source Files\99.Mgr\03.CollisionMgr</Filter>
     </ClInclude>
+    <ClInclude Include="Stair.h">
+      <Filter>Source Files\01.Obj\Stair</Filter>
+    </ClInclude>
+    <ClInclude Include="StairMgr.h">
+      <Filter>Source Files\99.Mgr\04.StairMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -110,15 +122,19 @@
     <ClCompile Include="MainGame.cpp">
       <Filter>Source Files\00.MainGame</Filter>
     </ClCompile>
-    <ClCompile Include="Infinite_Stairs.cpp">
-      <Filter>Default</Filter>
-    </ClCompile>
     <ClCompile Include="Obj.cpp">
       <Filter>Source Files\01.Obj</Filter>
     </ClCompile>
     <ClCompile Include="CollisionMgr.cpp">
       <Filter>Source Files\99.Mgr\03.CollisionMgr</Filter>
     </ClCompile>
+    <ClCompile Include="Stair.cpp">
+      <Filter>Source Files\01.Obj\Stair</Filter>
+    </ClCompile>
+    <ClCompile Include="StairMgr.cpp">
+      <Filter>Source Files\99.Mgr\04.StairMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Infinite_Stairs.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Infinite_Stairs.rc">

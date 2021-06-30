@@ -158,6 +158,8 @@
     <ClInclude Include="ObjMgr.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ScrollMgr.h" />
+    <ClInclude Include="Stair.h" />
+    <ClInclude Include="StairMgr.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Struct.h" />
     <ClInclude Include="targetver.h" />
@@ -170,6 +172,8 @@
     <ClCompile Include="Obj.cpp" />
     <ClCompile Include="ObjMgr.cpp" />
     <ClCompile Include="ScrollMgr.cpp" />
+    <ClCompile Include="Stair.cpp" />
+    <ClCompile Include="StairMgr.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

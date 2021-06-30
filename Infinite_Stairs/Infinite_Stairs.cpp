@@ -48,8 +48,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 	DWORD dwTime = GetTickCount();
 
-	CMainGame mainGame;
+	srand(unsigned(time(NULL)));
 
+	CMainGame mainGame;
+	mainGame.Initialize();
     // Main message loop:
 	while (WM_QUIT != msg.message)
 	{
