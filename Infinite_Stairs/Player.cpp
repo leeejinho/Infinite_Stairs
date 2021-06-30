@@ -73,15 +73,30 @@ void CPlayer::Key_Check()
 {
 	if (CKeyMgr::Get_Instance()->Key_Down(VK_LEFT))
 	{
-		m_tInfo.fX -= 82.f;
-		m_tInfo.fY -= 45.f;
+		if (m_bStretch)
+		{
+			m_tInfo.fX -= STAIR_CX;
+			m_tInfo.fY -= STAIR_CY;
+		}
+		else
+		{
+			m_tInfo.fX -= STAIR_CX;
+			m_tInfo.fY -= STAIR_CY;
+		}
 	}
 	else if (CKeyMgr::Get_Instance()->Key_Down(VK_RIGHT))
 	{
 		m_bStretch = !m_bStretch;
 
-		m_tInfo.fX += 82.f;
-		m_tInfo.fY -= 45.f;
-
+		if (m_bStretch)
+		{
+			m_tInfo.fX -= STAIR_CX;
+			m_tInfo.fY -= STAIR_CY;
+		}
+		else
+		{
+			m_tInfo.fX -= STAIR_CX;
+			m_tInfo.fY -= STAIR_CY;
+		}
 	}
 }
