@@ -46,6 +46,7 @@ void CPlayer::Render(HDC _DC)
 
 void CPlayer::Release()
 {
+	int i = 0;
 }
 
 void CPlayer::Update_Rect()
