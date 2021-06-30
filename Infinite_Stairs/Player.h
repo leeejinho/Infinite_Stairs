@@ -13,6 +13,7 @@ public:
 	void Update_Rect();
 	void Update_Frame();
 	void Key_Check();
+	void Move_Player();
 
 public:
 	virtual void Initialize() override;

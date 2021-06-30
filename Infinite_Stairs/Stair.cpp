@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "Stair.h"
-
+#include "ScrollMgr.h"
 
 CStair::CStair()
 {
@@ -39,7 +39,10 @@ void CStair::Late_Update()
 
 void CStair::Render(HDC _DC)
 {
-	Rectangle(_DC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+	int iScrollX = (int)CScrollMgr::Get_Instance()->Get_ScrollX();
+	int iScrollY = (int)CScrollMgr::Get_Instance()->Get_ScrollY();
+
+	Rectangle(_DC, m_tRect.left + iScrollX, m_tRect.top + iScrollY, m_tRect.right + iScrollX, m_tRect.bottom + iScrollY);
 }
 
 void CStair::Release()

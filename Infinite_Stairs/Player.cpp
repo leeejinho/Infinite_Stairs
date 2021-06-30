@@ -17,7 +17,7 @@ CPlayer::~CPlayer()
 void CPlayer::Initialize()
 {
 	m_tInfo.fX = WINCX / 2;
-	m_tInfo.fY = WINCY - 200;
+	m_tInfo.fY = 600;
 
 	m_tInfo.iCX = 100;
 	m_tInfo.iCY = 150;
@@ -41,7 +41,10 @@ void CPlayer::Late_Update()
 
 void CPlayer::Render(HDC _DC)
 {
-	Rectangle(_DC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+	int iScrollX = (int)CScrollMgr::Get_Instance()->Get_ScrollX();
+	int iScrollY = (int)CScrollMgr::Get_Instance()->Get_ScrollY();
+
+	Rectangle(_DC, m_tRect.left + iScrollX, m_tRect.top + iScrollY, m_tRect.right + iScrollX, m_tRect.bottom + iScrollY);
 }
 
 void CPlayer::Release()
@@ -73,31 +76,29 @@ void CPlayer::Key_Check()
 {
 	if (CKeyMgr::Get_Instance()->Key_Down(VK_LEFT))
 	{
-
 		m_bStretch = !m_bStretch;
-
-		if (m_bStretch)
-		{
-			m_tInfo.fX -= STAIR_CX;
-			m_tInfo.fY -= STAIR_CY;
-		}
-		else
-		{
-			m_tInfo.fX += STAIR_CX;
-			m_tInfo.fY -= STAIR_CY;
-		}
+		Move_Player();		
 	}
 	else if (CKeyMgr::Get_Instance()->Key_Down(VK_RIGHT))
 	{
-		if (m_bStretch)
-		{
-			m_tInfo.fX -= STAIR_CX;
-			m_tInfo.fY -= STAIR_CY;
-		}
-		else
-		{
-			m_tInfo.fX += STAIR_CX;
-			m_tInfo.fY -= STAIR_CY;
-		}
+		Move_Player();
+	}
+}
+
+void CPlayer::Move_Player()
+{
+	if (m_bStretch)
+	{
+		m_tInfo.fX += STAIR_CX;
+		m_tInfo.fY -= STAIR_CY;
+		CScrollMgr::Get_Instance()->Set_ScrollX(-STAIR_CX);
+		CScrollMgr::Get_Instance()->Set_ScrollX(-STAIR_CY);
+	}
+	else
+	{
+		m_tInfo.fX -= STAIR_CX;
+		m_tInfo.fY -= STAIR_CY;
+		CScrollMgr::Get_Instance()->Set_ScrollX(+STAIR_CX);
+		CScrollMgr::Get_Instance()->Set_ScrollX(-STAIR_CY);
 	}
 }
