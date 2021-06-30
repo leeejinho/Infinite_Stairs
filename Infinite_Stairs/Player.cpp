@@ -19,8 +19,8 @@ void CPlayer::Initialize()
 	m_tInfo.fX = WINCX / 2;
 	m_tInfo.fY = WINCY - 200;
 
-	m_tInfo.iCX = 113;
-	m_tInfo.iCY = 225;
+	m_tInfo.iCX = 100;
+	m_tInfo.iCY = 150;
 }
 
 int CPlayer::Update()
@@ -73,19 +73,7 @@ void CPlayer::Key_Check()
 {
 	if (CKeyMgr::Get_Instance()->Key_Down(VK_LEFT))
 	{
-		if (m_bStretch)
-		{
-			m_tInfo.fX -= STAIR_CX;
-			m_tInfo.fY -= STAIR_CY;
-		}
-		else
-		{
-			m_tInfo.fX -= STAIR_CX;
-			m_tInfo.fY -= STAIR_CY;
-		}
-	}
-	else if (CKeyMgr::Get_Instance()->Key_Down(VK_RIGHT))
-	{
+
 		m_bStretch = !m_bStretch;
 
 		if (m_bStretch)
@@ -95,7 +83,20 @@ void CPlayer::Key_Check()
 		}
 		else
 		{
+			m_tInfo.fX += STAIR_CX;
+			m_tInfo.fY -= STAIR_CY;
+		}
+	}
+	else if (CKeyMgr::Get_Instance()->Key_Down(VK_RIGHT))
+	{
+		if (m_bStretch)
+		{
 			m_tInfo.fX -= STAIR_CX;
+			m_tInfo.fY -= STAIR_CY;
+		}
+		else
+		{
+			m_tInfo.fX += STAIR_CX;
 			m_tInfo.fY -= STAIR_CY;
 		}
 	}

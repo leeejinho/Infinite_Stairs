@@ -2,6 +2,7 @@
 #include "MainGame.h"
 #include "ObjMgr.h"
 #include "StairMgr.h"
+#include "Player.h"
 
 CMainGame::CMainGame()
 {
@@ -15,6 +16,10 @@ CMainGame::~CMainGame()
 
 void CMainGame::Initialize()
 {
+	CObj* pObj = new CPlayer;
+	pObj->Initialize();
+	CObjMgr::Get_Instance()->Add_Object(pObj, OBJID::PLAYER);
+
 	m_hDC = GetDC(g_hWnd);
 	CStairMgr::Get_Instance()->Initialize();
 }
@@ -31,6 +36,7 @@ void CMainGame::Late_Update()
 
 void CMainGame::Render()
 {
+	Rectangle(m_hDC, 0, 0, WINCX, WINCY);
 	CObjMgr::Get_Instance()->Render(m_hDC);
 }
 
