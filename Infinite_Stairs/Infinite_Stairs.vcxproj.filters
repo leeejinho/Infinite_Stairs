@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{c042e0e2-d62b-44fa-8370-b5d8b553721c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include">
+      <UniqueIdentifier>{15b38236-f675-498c-b7e6-e6b218d4d6ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.MainGame">
+      <UniqueIdentifier>{f3e0f958-8569-455d-a4aa-b43028b3c8ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01.Obj">
+      <UniqueIdentifier>{be5f9c22-059c-4d1a-b070-e2ccacbac8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\99.Mgr">
+      <UniqueIdentifier>{e1418976-9a04-4a94-8976-5a2102713226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\99.Mgr\00.ObjMgr">
+      <UniqueIdentifier>{d5fa73c6-3336-4c22-b29e-f4153ec005dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\99.Mgr\01.KeyMgr">
+      <UniqueIdentifier>{67768b79-2cb5-484d-a971-ecedde3439ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\99.Mgr\02.ScrollMgr">
+      <UniqueIdentifier>{a28966ac-abf2-4072-9447-fd4ed39d8c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\99.Mgr\03.CollisionMgr">
+      <UniqueIdentifier>{ce3077dc-67e1-4425-ac1d-b6382bf6a559}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Infinite_Stairs.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Include.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Extern.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMgr.h">
+      <Filter>Source Files\99.Mgr\00.ObjMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMgr.h">
+      <Filter>Source Files\99.Mgr\01.KeyMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollMgr.h">
+      <Filter>Source Files\99.Mgr\02.ScrollMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>Source Files\00.MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>Source Files\01.Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionMgr.h">
+      <Filter>Source Files\99.Mgr\03.CollisionMgr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMgr.cpp">
+      <Filter>Source Files\99.Mgr\00.ObjMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>Source Files\99.Mgr\01.KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollMgr.cpp">
+      <Filter>Source Files\99.Mgr\02.ScrollMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>Source Files\00.MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Infinite_Stairs.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>Source Files\01.Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionMgr.cpp">
+      <Filter>Source Files\99.Mgr\03.CollisionMgr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Infinite_Stairs.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Infinite_Stairs.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
